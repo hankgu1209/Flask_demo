@@ -64,4 +64,4 @@ def update_output(n_clicks,text_input):
 
 #运行应用
 if __name__ =='__main__':
-    app.run(host='localhost',debug=True)
+    app.run()
