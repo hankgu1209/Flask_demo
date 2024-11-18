@@ -16,4 +16,4 @@ EXPOSE 8000
 
 # 启动 Gunicorn 服务器，'-c' 参数指定 Gunicorn 的配置文件
 # 'demo:server' 指定了 Gunicorn 应当寻找的模块名和应用实例名
-CMD ["gunicorn", "-c", "gunicorn_config.py", "demo:server"]
+CMD ["gunicorn", "-c", "gunicorn_config.py", "demo:app"]
