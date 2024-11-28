@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Flask and Dash Integration</title>
 </head>
 <body>
     <h1>Welcome to Flask</h1>
-    <form action="/dash">
-        <button type="'submit">To Dash</button>
-    </form>
+    <p>Click the buttons below to perform actions.</p>
+    
+    <p>{{ url_for('send_data') }}</p>
+    <button onclick="window.location.href='{{ url_for('send_data') }}';">Get Data from Flask</button>
+    <!-- <a href="{{ url_for('send_data') }}" class="button-link">Say Hello</a> -->
+    <button onclick="window.location.href='/dashboard/';">Go to Dash Dashboard</button>
 </body>
 </html>

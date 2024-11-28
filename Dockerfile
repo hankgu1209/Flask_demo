@@ -12,7 +12,7 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Gunicorn 将监听的端口，确保这个端口与 Gunicorn 配置中的端口相匹配
-EXPOSE 8000
+EXPOSE 5000
 
 # 启动 Gunicorn 服务器，'-c' 参数指定 Gunicorn 的配置文件
 # 'demo:server' 指定了 Gunicorn 应当寻找的模块名和应用实例名
