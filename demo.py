@@ -10,6 +10,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
 # 创建dash应用
 dash_app = dash.Dash(__name__, server=app, url_base_pathname='/dash/')
 
@@ -22,6 +26,10 @@ dash_layout = html.Div(
         html.A(
             html.Button('Back to Home'),
             href='/'  # 指向Flask页面
+        ),
+        html.A(
+            html.Button('Go to login'),
+            href = '/login'
         ),
         html.Div(
             [
