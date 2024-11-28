@@ -1,5 +1,5 @@
 # gunicorn_config.py
-bind = "0.0.0.0:8000"
+bind = "0.0.0.0:5000"
 workers = 2
 accesslog = '-'
 loglevel = 'debug'
